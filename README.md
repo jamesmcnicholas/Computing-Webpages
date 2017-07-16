@@ -9,22 +9,9 @@ Below shows some basic concepts i've used recently for my current course
 ```markdown
 Insertion Sort
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+`if (visitors.count()<1) {
+    System.out.println("Success!")
+ }
 
 ### Completed Qualifications
 
