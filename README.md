@@ -4,10 +4,10 @@ I'm an aspiring developer, who loves to experiment with and learn new things. My
 
 ### Hello World, Its me!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Below shows some basic concepts i've used recently for my current course
 
 ```markdown
-Syntax highlighted code block
+Insertion Sort
 
 # Header 1
 ## Header 2
