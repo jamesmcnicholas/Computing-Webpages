@@ -14,12 +14,15 @@ body {
 .Society{background-color:#ac68e8;}
 
 .text-center {
+    margin:0 auto;
     text-align:center;
 }
 .text-left {
     text-align:left;
 }
-
+div {
+    box-sizing: border-box;
+}
 h1 {
     line-height:80px;
     font-weight:900;
@@ -99,6 +102,32 @@ section {
     font-size: 16px;
     margin:auto;
 }
+
+ul {
+    border-radius: 10px;
+    list-style-position: inside;
+    text-align: center;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+/* Only add border to bottom of <li> */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Get rid of the last <li>'s bottom border to stop overlap with <ul>'s border */
+/* :last-child works in IE7+ */
+li:last-child {
+    border-bottom: none;
+}
+
+/* Get the number and float it right */
+span {
+    float: right;
+}
+​ }
 .fixed {
     position: fixed;
     top: 0;
