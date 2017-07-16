@@ -9,10 +9,10 @@ Below shows some basic concepts i've used recently for my current course
 ```markdown
 Insertion Sort
 
-`if (visitors.count()<1) {
-    System.out.println("Success!")
- }
-
+    if (visitors.count()<1) {
+        System.out.println("Success!")
+    }
+```
 ### Completed Qualifications
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jmcnicholas62743/RevisionWebpages/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
