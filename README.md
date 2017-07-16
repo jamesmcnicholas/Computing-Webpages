@@ -1,9 +1,8 @@
-##Hi! I'm James
+## Hi! I'm James
 
-I'm working on web stuff, lets see how this goes
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I'm an aspiring developer, who loves to experiment with and learn new things. My work usually involves backend systems through Java, though i also enjoy exploring the frontend through use os HTML and CSS. I've also picked up some C#, due to its many similarities to Java.
 
-### Markdown
+### Hello World, Its me!
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
