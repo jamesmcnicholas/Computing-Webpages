@@ -12,6 +12,7 @@ body {
 .Computation{background-color: #6bb6e8;}
 .Connectivity{background-color: #7768e8;}
 .Society{background-color:#ac68e8;}
+.Home{background-color:#4d4d4d;}
 
 .text-center {
     margin:0 auto;
@@ -106,9 +107,9 @@ section {
 ul {
     border-radius: 10px;
     list-style-position: inside;
-    text-align: center;
-    padding-left:50px;
-    padding-right:50px;
+    text-align:left;
+    padding-left:30%;
+    padding-right:30%;
 }
 
 /* Only add border to bottom of <li> */
