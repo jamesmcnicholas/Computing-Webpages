@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<?php
+//Load Framework
+require_once("libraries/TeamSpeak3/TeamSpeak3.php");
+
+try {
+   //Connect
+   $ts3 = TeamSpeak3::factory("serverquery://serveradmin:Gokart72@138.68.136.196:10011/?server_port=9987");
+
+   //Server Status
+   echo "Server Status: online";
+}
+catch(Exception $e) {
+   //Errors (No connection)
+   echo "Server Status: offline";
+}
+?>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -234,7 +250,7 @@
 		</ul>
 	</div>
 </div>
-<span id="its882668"><a href="http://www.teamspeak3.com/">teamspeak server</a> Hosting by TeamSpeak3.com</span><script type="text/javascript" src="https://view.light-speed.com/teamspeak3.php?IP=138.68.136.196&PORT=9987&QUERY=10011&UID=882668&display=none&font=11px&background=transparent&server_info_background=%23424242&server_info_text=%23ffffff&server_name_background=transparent&server_name_text=%23ffffff&info_background=transparent&channel_background=transparent&channel_text=%23ffffff&username_background=transparent&username_text=%23ffffff"></script>
+Teamspeak: <?php onlineStatus(); ?>
 </div>
 </section>
 <section id="Section-3" class="fullbg color-white">
