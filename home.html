@@ -5,14 +5,14 @@ require_once("libraries/TeamSpeak3/TeamSpeak3.php");
 
 try {
    //Connect
-   $ts3 = TeamSpeak3::factory("serverquery://serveradmin:Gokart72@138.68.136.196:10011/?server_port=9987");
+   $ts3 = TeamSpeak3::factory("serverquery://user:pass@138.68.136.196:10011/?server_port=9987");
 
    //Server Status
    echo "Server Status: online";
 }
 catch(Exception $e) {
    //Errors (No connection)
-   echo "Server Status: offline";
+   echo "Server Status: offline";:
 }
 ?>
 <html lang="en">
@@ -27,7 +27,7 @@ catch(Exception $e) {
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/style1.css" rel="stylesheet">
 <link href="css/animate.css" rel="stylesheet">
-<link href="css/skin-tealblue.css" rel="stylesheet">
+<link href="css/skin-blue.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar">
 <nav id="topnav" class="navbar navbar-fixed-top navbar-default" role="navigation">
@@ -252,6 +252,7 @@ catch(Exception $e) {
 </div>
 Teamspeak: <?php onlineStatus(); ?>
 </div>
+
 </section>
 <section id="Section-3" class="fullbg color-white">
 <div class="section-divider">
@@ -270,7 +271,7 @@ Teamspeak: <?php onlineStatus(); ?>
 		<div class="arrow">
 		</div>
 		<div class="testimonials-slider">
-			<div class="slide">
+			<div  class="slide">
 				<div class="testimonials-carousel-thumbnail">
 					<img width="120" alt="" src="img/Head-1.png">
 				</div>
@@ -278,7 +279,7 @@ Teamspeak: <?php onlineStatus(); ?>
 					<div class="testimonials-name">
 						 Algorithm title <span>Java</span>
 					</div>
-					<div class="testimonials-carousel-content">
+					<div>
 						<p>
 							 Enter text describing an algorithm
 						</p>
@@ -350,6 +351,7 @@ public class Hi {
 </div>
 </div>
 </section>
+
 <!-- FOOTER -->
 <footer id="foot-sec">
 <div class="footerdivide">
@@ -384,6 +386,6 @@ public class Hi {
 <script src="js/animations.js"></script>
 <script src="js/init.js"></script>
 <script src="https://use.fontawesome.com/a04959cf13.js"></script>
-<script src="https://rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp" defer=""></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp"></script>
 </body>
 </html>
