@@ -432,10 +432,7 @@ ul {
 .bx-wrapper span {
 	text-shadow:none;
 	font-size:11px;
-	margin-left:10px;
 	color:#999;
-	font-family:Georgia,Arial,Helvetica,sans-serif;
-	font-style:italic;
 }
 .bx-wrapper {
 	position:relative;
