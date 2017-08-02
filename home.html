@@ -1,20 +1,4 @@
 <!DOCTYPE html>
-<?php
-//Load Framework
-require_once("libraries/TeamSpeak3/TeamSpeak3.php");
-
-try {
-   //Connect
-   $ts3 = TeamSpeak3::factory("serverquery://user:pass@138.68.136.196:10011/?server_port=9987");
-
-   //Server Status
-   echo "Server Status: online";
-}
-catch(Exception $e) {
-   //Errors (No connection)
-   echo "Server Status: offline";:
-}
-?>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
