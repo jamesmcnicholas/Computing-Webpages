@@ -261,12 +261,33 @@ Teamspeak: <?php onlineStatus(); ?>
 				</div>
 				<div class="testimonials-carousel-context">
 					<div class="testimonials-name">
-						 Algorithm title <span>  Written in Java</span>
+						 FizzBuzz 0-100 <span>  Written in Java</span>
 					</div>
 					<div>
               <pre class="prettyprint">
-public static void main (String[] args){
-    System.out.println("Test my face");
+import java.util.Scanner;
+public class FizzBuzz {
+public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter the 'Fizz' number");
+	int fizz = input.nextInt();
+	System.out.println("Enter the 'Buzz' number");
+	int buzz=input.nextInt();
+	for (int i=0;i<=100;i++){
+		String out="";
+		if (i%fizz==0){
+			out+="Fizz";
+		}
+		if (i%buzz==0){
+			out+="Buzz";
+		}
+		if (out.equals("")) {
+			System.out.println(i);
+		}else{
+			System.out.println(out);
+		}
+	}
+}
 }
               </pre>
 						<p>
@@ -311,17 +332,69 @@ public static void main (String[] args){
 				</div>
 				<div class="testimonials-carousel-context">
 					<div class="testimonials-name">
-						 Algorithm Title <span>  Written in C#</span>
+						 Hangman Game <span>  Written in Java</span>
 					</div>
 					<div class="testimonials-carousel-content">
-						<p>
-							 Something in C# incase I ever get round to learning it
-						</p>
+
 					</div>
 					<p>
-            <pre class="prettyprint">
-Some C# stuff goes here
-            </pre>
+<pre class="prettyprint">
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.*;
+public class Hangman {
+    public static void main(String[] args) {
+        boolean replay = true;
+        String yes = "Y";
+        while (replay){
+            ArrayList wordList = new ArrayList<String>();
+            ArrayList guessList = new ArrayList<String>();
+            Scanner input = new Scanner(System.in);
+            int correctLetters = 0;
+            int position;
+            int lives = 10;
+            char guess;
+            System.out.println("Enter a word");
+            String word = input.nextLine();
+
+            for (int j = 0; j < word.length(); j++) {
+                wordList.add(word.charAt(j));
+                guessList.add("_");
+            }
+
+            while (correctLetters < (word.length()) && lives > 0) {
+                System.out.println(guessList);
+                System.out.println("Guess a letter");
+                guess = input.next().charAt(0);
+                if (wordList.contains(guess)) {
+                    System.out.println("Correct!");
+                    position = word.indexOf(guess);
+                    guessList.set(position, guess);
+                    correctLetters++;
+                } else {
+                    lives--;
+                    System.out.println("Incorrect. Lives: " + lives);
+                }
+            }
+            System.out.println(guessList);
+            if (correctLetters >= word.length()) {
+                System.out.println("You win!");
+            } else {
+                System.out.println("The word was: " + wordList);
+                System.out.println("You lose.");
+            }
+            System.out.println("Continue? (true/false)");
+            boolean cont = input.nextBoolean();
+            if (cont) {
+                replay = true;
+            } else {
+                replay = false;
+            }
+
+        }
+    }
+}
+</pre>
 					</p>
 				</div>
 			</div>
