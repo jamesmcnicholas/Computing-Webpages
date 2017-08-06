@@ -1,82 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link type="text/css" href="css/style.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>James McNicholas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style1.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/skin-blue.css" rel="stylesheet">
 </head>
-<body>
-<div class="navigation">
-    <a href="Processing.html" class="button">Processing</a>
-    <a href="Systems.html" class="button">Systems</a>
-    <a href="Programming.html" class="button">Programming</a>
-    <a href="Development.html" class="button">Development</a>
-    <a href="Data.html" class="button">Data</a>
-    <a href="Computation.html" class="button">Computation</a>
-    <a href="Connectivity.html" class="button">Connectivity</a>
-    <a href="index.html" class="button">Home</a>
+<body data-spy="scroll" data-target=".navbar">
+<nav id="topnav" class="navbar navbar-fixed-top navbar-default" role="navigation">
+<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#top-section">James McNicholas</a>
+		<img src="img/Head-1.png" width="60px" height="60px">
+	</div>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="#top-section">Home</a></li>
+			<li><a href="#Section-1">What I do</a></li>
+			<li><a href="#Section-2">Programming</a></li>
+			<li><a href="#Section-3">Gallery</a></li>
+			<li><a href="RevisionPages/index.html">Revision Pages</a></li>
+		</ul>
+	</div>
+	<!-- /.navbar-collapse -->
 </div>
-<div class="container" id="home">
-    <div class="row text-center">
-        <div class="col-md-12" >
-            <h1 class="head-main"> <i class="fa fa-desktop fa-2x"></i>A2 Computer Science Revision Pages</h1>
-            <h2 class="head-sub-main">Navigate to topics using the buttons above</h2>
-        </div>
-    </div>
-</div>
-</div>
-<section class="color-white " id="about"  >
-    <div class="container" >
-        <div class="row text-center" >
-            <div class="col-md-8 col-md-offset-2 ">
-                <h2 style="padding-top:50px;">About The Site</h2>
-                </a>
-                <p>
-                <h3>This set of webpages was created to help summarise content on the A2 Computer Science specification for OCR<p>
-                The content is split into topics which can be viewed via the navbar at the top. The sections are as follows:</h3>
-                </p>
-                <div class="container">
-                  <ul>
-                     <li>Processing -> GPUs, Pipelining, Parallel Processing</li>
-                     <li>Systems -> Database Normalisations and Transactions</li>
-                     <li>Programming -> OOP Fundamentals, Inheritance, Types of Languages, Recursion</li>
-                     <li>Development -> Stages of Compilation</li>
-                     <li>Data -> Floating Pint Arithmetic, Advanced Boolean Algebra, Boolean Applications</li>
-                     <li>Computation -> Trees and Graphs, Advanced Sorts, Path Finding, Algorithms and Efficiency, Computational Methods</li>
-                     <li>Connectivity -> Compression, Network Security, Encryption and Hashing, Web Technologies</li>
-                  </ul>
-                </div>
-                <p class="spacing-small">
-                    Each page is split into subtopics, each of which contains the basic knowledge about that subject. These do not go
-                    into the full detail necessarily required for the exam, but should give you a basic idea of most of the concepts.
-                    From this you should be able to remind yourself and then progress or research further into areas you are unsure about.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class=" color-light"  >
-    <div class="container" >
+</nav>
+<!-- HOMEPAGE -->
+<header id="top-section" class="fullbg">
 
-        <div class="row text-center" >
-            <div class="col-md-12">
-                <h2>About Me</h2>
-                <p>
-                <h3>You can visit my main site using the button below</h3>
-                <div class="container">
-                I'm an aspiring software engineer who's currently in full tiem education. This website is as much a resource for you
-                as it is for me. It is allowing me to Revise my own knowledge, through noting it down here after lessons and studying.
-                You can find out more about me by clicking below.
-                </p>
-                <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp"></script>
-                <div class="navigation">
-                  <a href="home.html" class="button">About me</a>
-                </div>
-            </div>
+<div class="jumbotron">
+	<div id="carousel_intro" class="carousel slide fadeing">
+		<div class="carousel-inner">
+			<div class="active item" id="slide_1">
+				<div class="carousel-content">
+					<div class="animated fadeInDownBig">
+						 <h1>Programming, hosting and overall technology enthusiast.</h1>
+					</div>
+					<br/>
+					<a href="index.html" class="buttoncolor animated fadeInLeftBig"><i class="fa fa-link"></i>&nbsp; Other Site</a>
+					<a href="mailto:someone@example.com?Subject=Business%20enquiry" class="buttoncolor animated fadeInRightBig"><i class="fa fa-envelope-o"></i>&nbsp; Contact</a>
+				</div>
+			</div>
+			<div class="item" id="slide_2">
+				<div class="carousel-content">
+					<div class="animated fadeInDownBig">
+						 <h1>Founder of Riptide, a group of clients, friends and people I can create for</h1>
+					</div>
+					<br/>
+					<a href="#Section-3" class="buttoncolor animated fadeInRightBig"><i class="fa fa-book"></i>&nbsp; Learn More</a>
 
-        </div>
-    </div>
-</section>
+				</div>
+			</div>
+			<div class="item" id="slide_3">
+				<div class="carousel-content">
+					<div class="animated fadeInDownBig">
+						 <h1>A novice developer, with a passion to create.</h1>
+					</div>
+						<br/>
+						<a href="#Section-2" class="buttonyellow animated fadeInLeftBig"><i class="fa fa-download"></i>&nbsp; Read More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<button class="left carousel-control" href="#carousel_intro" data-slide="prev" data-start="opacity: 0.6; left: 0%;" data-250="opacity:0; left: 5%;"><i class="fa fa-chevron-left"></i></button>
+	<button class="right carousel-control" href="#carousel_intro" data-slide="next" data-start="opacity: 0.6; right: 0%;" data-250="opacity:0; right: 5%;"><i class="fa fa-chevron-right"></i></button>
 </div>
-<h4 align="right">James McNicholas 2017</h4>
+<div class="inner-top-bg">
+</div>
+</header>
+<!-- / HOMEPAGE -->
+<!--  SECTION-1 -->
+<section id="Section-1" class="fullbg">
+<div class="section-divider">
+</div>
+<div class="container">
+<div class="row">
+	<div class="page-header text-center col-sm-12 col-lg-12 color-white animated fade">
+		<h1>Who am I?</h1>
+		<p class="lead">
+			 What exactly do I do?
+		</p>
+	</div>
+</div>
+<div class="row color-white">
+	<div class="col-md-12 animated fadeInUpNow">
+		<div class="boxservice">
+			<i class="fa fa-globe"></i>
+			<h3>Web Design</h3>
+			<p>
+				I've worked on the front-end for a number of websites, with significant examples being this and my revision pages
+			</p>
+		</div>
+		<div class="boxservice">
+			<i class="fa fa-microphone"></i>
+			<h3>Teamspeak Hosting</h3>
+			<p>
+				I have a lot of experience with hosting teamspeak, from the client and its features, to the permission system.
+			</p>
+		</div>
+		<div class="boxservice rightb">
+			<i class="fa fa-users"></i>
+			<h3>Community Management</h3>
+			<p>
+				For the last four years, I've dedicated a substantial amount of time to volunteering and managing several online communities.
+			</p>
+		</div>
+		<div class="boxservice bottomb">
+			<i class="fa fa-flask"></i>
+			<h3>QA Testing</h3>
+			<p>
+				I also have moderate experience in a QA environment, having spent some time at Testology QA using their methodologies
+			</p>
+		</div>
+		<div class="boxservice bottomb">
+			<i class="fa fa-github-square"></i>
+			<h3>Programming</h3>
+			<p>
+				I'm currently developing my OOP knowledge, and I'm eager to explore the endless possibilities of these languages.
+			</p>
+		</div>
+		<div class="boxservice rightb bottomb">
+			<i class="fa fa-server"></i>
+			<h3>Server Hosting</h3>
+			<p>
+				Not limited just to VOIP hosting, I have experience with lots of other types, including a majority of gameservers.
+			</p>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<section id="Section-2" class="fullbg color-white">
+<div class="section-divider">
+</div>
+<div class="container">
+<div class="row">
+	<div class="page-header text-center col-sm-12 col-lg-12 animated fade">
+		<h1>Programming</h1>
+		<p class="lead">
+			 A few small examples of my work, stretching from Java and C# through to HTML and CSS
+		</p>
+	</div>
+</div>
+<div class="row testimonials animated fadeInUpNow">
+	<div class="col-sm-12 col-lg-12">
+		<div class="arrow">
+		</div>
+		<div class="testimonials-slider">
+			<div  class="slide">
+				<div class="testimonials-carousel-thumbnail">
+					<img width="120" alt="" src="img/Head-1.png">
+				</div>
+				<div class="testimonials-carousel-context">
+					<div class="testimonials-name">
+						 FizzBuzz 0-100 <span>  Written in Java</span>
+					</div>
+					<div>
+              <pre class="prettyprint">
+import java.util.Scanner;
+public class FizzBuzz {
+public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter the 'Fizz' number");
+	int fizz = input.nextInt();
+	System.out.println("Enter the 'Buzz' number");
+	int buzz=input.nextInt();
+	for (int i=0;i<=100;i++){
+		String out="";
+		if (i%fizz==0){
+			out+="Fizz";
+		}
+		if (i%buzz==0){
+			out+="Buzz";
+		}
+		if (out.equals("")) {
+			System.out.println(i);
+		}else{
+			System.out.println(out);
+		}
+	}
+}
+}
+              </pre>
+						<p>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="testimonials-carousel-thumbnail">
+					<img width="400" height ="400" alt="" src="img/Head-1.png">
+				</div>
+				<div class="testimonials-carousel-context">
+					<div class="testimonials-name">
+						 Simple code box<span>  Written in CSS</span>
+					</div>
+					<div class="testimonials-carousel-content">
+						<p>
+							Testamaroo
+						</p>
+					</div>
+					<p>
+						<pre class=prettyprint>
+.code { background:#f5f8fa;
+	background-repeat:no-repeat;
+	border: solid #5C7B90;
+	border-width: 1px 1px 1px 20px;
+	color: #000000;
+	font: 13px 'Courier New', Courier, monospace;
+	line-height: 16px; margin: 10px 0 10px 10px;
+	max-height: 200px; min-height: 16px; overflow: auto;
+	padding: 10px 10px 10px;
+	width: 90%; }
+
+.code:hover {
+	background: #FAFAFA; background-repeat:no-repeat;}
+						</div>
+					</p>
+				</div>
+			<div class="slide">
+				<div class="testimonials-carousel-thumbnail">
+					<img width="120" alt="" src="img/Head-1.png">
+				</div>
+				<div class="testimonials-carousel-context">
+					<div class="testimonials-name">
+						 Hangman Game <span>  Written in Java</span>
+					</div>
+					<div class="testimonials-carousel-content">
+
+					</div>
+					<p>
+<pre class="prettyprint">
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.lang.*;
+public class Hangman {
+    public static void main(String[] args) {
+        boolean replay = true;
+        String yes = "Y";
+        while (replay){
+            ArrayList wordList = new ArrayList<String>();
+            ArrayList guessList = new ArrayList<String>();
+            Scanner input = new Scanner(System.in);
+            int correctLetters = 0;
+            int position;
+            int lives = 10;
+            char guess;
+            System.out.println("Enter a word");
+            String word = input.nextLine();
+
+            for (int j = 0; j < word.length(); j++) {
+                wordList.add(word.charAt(j));
+                guessList.add("_");
+            }
+
+            while (correctLetters < (word.length()) && lives > 0) {
+                System.out.println(guessList);
+                System.out.println("Guess a letter");
+                guess = input.next().charAt(0);
+                if (wordList.contains(guess)) {
+                    System.out.println("Correct!");
+                    position = word.indexOf(guess);
+                    guessList.set(position, guess);
+                    correctLetters++;
+                } else {
+                    lives--;
+                    System.out.println("Incorrect. Lives: " + lives);
+                }
+            }
+            System.out.println(guessList);
+            if (correctLetters >= word.length()) {
+                System.out.println("You win!");
+            } else {
+                System.out.println("The word was: " + wordList);
+                System.out.println("You lose.");
+            }
+            System.out.println("Continue? (true/false)");
+            boolean cont = input.nextBoolean();
+            if (cont) {
+                replay = true;
+            } else {
+                replay = false;
+            }
+        }
+    }
+}
+</pre>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<section id="Section-3" class="fullbg color-white">
+<div class="section-divider">
+</div>
+<div class="container demo-3">
+<div class="row">
+	<div class="page-header text-center col-sm-12 col-lg-12 animated fade">
+		<h1>Gallery</h1>
+		<p class="lead">
+			 A few examples of stuff I have worked on
+		</p>
+	</div>
+</div>
+<div class="row animated fadeInUpNow">
+	<div class="col-sm-12 col-lg-12">
+		<ul class="grid cs-style-4">
+			<li>
+			<figure>
+			<div>
+				<img src="http://i.imgur.com/vupyZy9.png" alt="One of my teamspeak servers">
+			</div>
+			<figcaption>
+			<h3>Teamspeak</h3>
+			<span>A server I host</span>
+			<a href="http://i.imgur.com/vupyZy9.png">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="http://i.imgur.com/skhw9fk.png" alt="Completion of the SoloLearn Java course">
+			</div>
+			<figcaption>
+			<h3>Sololearn</h3>
+			<span>Java tutorial course</span>
+			<a href="http://i.imgur.com/skhw9fk.png">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="http://i.imgur.com/Kl4iK0a.png" alt="HTML course">
+			</div>
+			<figcaption>
+			<h3>Sololearn</h3>
+			<span>HTML Course</span>
+			<a href="http://i.imgur.com/Kl4iK0a.png">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="http://i.imgur.com/zgQBH2C.png" alt="Codecademy">
+			</div>
+			<figcaption>
+			<h3>Java & CSS</h3>
+			<span>Completed codecademy courses</span>
+			<a href="https://www.codecademy.com/JamesMcnicholas">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+				<img src="Temp" alt="woo">
+			</div>
+			<figcaption>
+			<h3>Camera</h3>
+			<span>Wow</span>
+			<a href="#">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+			<li>
+			<figure>
+			<div>
+
+			</div>
+			<figcaption>
+			<h3>Phone</h3>
+			<span>Placeholder</span>
+			<a href="#">Take a look</a>
+			</figcaption>
+			</figure>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="foot-sec">
+<div class="footerdivide">
+</div>
+<div class="container ">
+<div class="row">
+	<div class="text-center color-white col-sm-12 col-lg-12">
+		<ul class="social-icons">
+			<li><a href="mailto:james.mcnicholas1@gmail.com?Subject=Business%20enquiry"><i class="fa fa-envelope-o"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="http://steamcommunity.com/id/jambosquidge"><i class="fa fa-steam"></i></a></li>
+			<li><a href="https://github.com/jmcnicholas62743"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://stackoverflow.com/users/8327559/james-mcnicholas"><i class="fa fa-stack-overflow"></i></a></li>
+			<li><a href="https://www.codecademy.com/JamesMcnicholas"><i class="fa fa-terminal"></i></a></li>
+		</ul>
+		<p>
+			 ©Jamesmc.me 2017
+		</p>
+</div>
+</div>
+</footer>
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/particles.js" type="text/javascript"></script>
+<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-1.4.6-min.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/init.js"></script>
+<script src="https://use.fontawesome.com/a04959cf13.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp"></script>
 </body>
 </html>
