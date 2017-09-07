@@ -1654,7 +1654,7 @@ canvas {
   left: 0;
   display: block;
   width: 30px;
-  padding: 10px 0 12px;
+  padding: 5px 0 12px;
   font-family: fontawesome;
   text-align: center;
   border-radius: 3px 0 0 3px;
@@ -1683,3 +1683,14 @@ canvas {
 a {
     color: black;
 }
+#buttonPart1{
+	display: inline-block !important;
+
+}
+#buttonPart2{
+		display: inline-block !important;
+}
+.set.green .btn.pri { background: #6b6; text-align: center;}
+.set.red .btn.pri { background: #d33; text-align: center; }
+.set.green .btn.pri:hover { background: #5a5; text-align: center; }
+.set.red .btn.pri:hover { background: #c22; text-align: center; }
