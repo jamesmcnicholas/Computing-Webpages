@@ -96,7 +96,12 @@ section {
 }
 .spacing-small {
     line-height:120%;
-    width: 90%;
+    width: 70%;
+    margin: 0 auto;
+}
+.paragraph-small {
+    line-height:120%;
+    width: 50%;
     margin: 0 auto;
 }
 .color-light {
