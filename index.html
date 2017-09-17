@@ -156,7 +156,7 @@
 	<div class="page-header text-center col-sm-12 col-lg-12 animated fade">
 		<h1>Programming</h1>
 		<p class="lead">
-			 A few small examples of my work, stretching from Java and C# through to HTML and CSS
+			 A few small examples of my work, stretching from Java through to HTML and CSS
 		</p>
 	</div>
 </div>
@@ -242,6 +242,59 @@ public static void main(String[] args){
 					</div>
 				</div>
 			</div>
+			<div class="slide">
+				<div class="testimonials-carousel-thumbnail">
+					<img width="400" height ="400" alt="" src="img/Head-1.png">
+						<div class='set blue'>
+							<a href="https://github.com/jmcnicholas62743" class='btn pri ico'>GitHub  <i class="fa fa-github"></i></a>
+						</div>
+				</div>
+				<div class="testimonials-carousel-context">
+					<div class="testimonials-name">
+						 Calculator<span> Crafted with Java</span>
+					</div>
+					<div class="testimonials-carousel-content">
+						<p>
+							An object oriented Calculator class
+						</p>
+					</div>
+					<p>
+<pre class=prettyprint>
+public class Calculator {
+    private int value1;
+    private int value2;
+    private Reader reader = new Reader();
+
+    public void start() {
+        while (true) {
+            System.out.print("command: ");
+            String command = reader.readString();
+            if (command.equals("end")) {
+                break;
+            } else if (command.equals("sum")) {
+                sum();
+            } else if (command.equals("difference")) {
+                difference();
+            } else if (command.equals("product")) {
+                product();
+            }
+        }
+    }
+    private void sum(){
+        readValues();
+        int result = value1+ value2;
+        System.out.println("sum of the values "+ result);
+    }
+	private void readValues(){
+		System.out.println("value1:");
+		this.value1= reader.readInteger();
+		System.out.println("value2:");
+		this.value2= reader.readInteger();
+	}
+}
+						</div>
+					</p>
+				</div>
 			<div class="slide">
 				<div class="testimonials-carousel-thumbnail">
 					<img width="400" height ="400" alt="" src="img/Head-1.png">
