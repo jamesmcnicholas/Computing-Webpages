@@ -28,9 +28,9 @@
     <div class="container" >
         <div class="row text-center" >
             <div class="col-md-8 col-md-offset-2 ">
-                <h2 style="padding-top:50px;">Database Normalisation</h2>
+                <h2 style="padding-top:50px;">Database Systems</h2>
                 <h3>Databases are a great way of storing and relating relational data. The main language used for databases is SQL</h3>
-                <ol class="row text-left" >
+                <ol class="spacing-small" style="text-align: left">
                     <li>SELECT - Allows "selection" of a set of data from a database</li>
                     <li>UPDATE - Modifies selected data</li>
                     <li>DELETE - Deletes selected data</li>
@@ -38,14 +38,29 @@
                     <li>FROM - Chooses the table from which to select data</li>
                     <li>WHERE - Allows constraints for selection, i.e. WHERE Country="England"</li>
                 </ol>
+                <p>
+                </p>
+                <h2>Normalisation</h2>
                 <p class="paragraph-small">
                     While being able to set up a database with the reqired SQL is functional, many programs such as SQLite or Microsoft
                     Access provide tools to make this easier. However, being able to set up a set of tables isn't what makes a good
                     database; this is where normalisation comes in. There are three 'forms' to databases, first, second, and third normal form.
                     Each provides a set of criteria to reduce data inconsistencies and prevent repeated entries.
                 </p>
-                <p class="paragraph-small">
-                    First normal form focuses on...
+                <p>
+                </p>
+                <p class="paragraph-small" style="">
+                  <ul>
+                    <h4 style="background-color:#f99436">First normal form focuses on several key concepts:</h4>
+                    <li>Each row must be unique (must have a primary key)</li>
+                    <li>Each field (column) must have a unique name</li>
+                    <li>Each column must not contain similar or repeated data</li>
+                    <li>Each data item must not be able to be further broken down (e.g addresses)</li>
+                    <h4 style="background-color:#f99436">Second normal form only applies to tables with composite primary keys:</h4>
+                    <li>Non-Key attributes must depend on every part of the primary key</li>
+                    <h4 style="background-color:#f99436">Third normal form builds on second normal form:</h4>
+                    <li>There are no non-key attributes that depend on another non-key attribute</li>
+                  </ul>
                 </p>
 
             </div>

@@ -103,6 +103,7 @@ section {
     line-height:120%;
     width: 50%;
     margin: 0 auto;
+    text-align: left;
 }
 .color-light {
     background-color:#E9E9E9;
