@@ -3,6 +3,7 @@
 <head>
     <link type="text/css" href="../css/style.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Development</title>
 </head>
 <body class="Development">
 <div class="navigation">
@@ -30,22 +31,64 @@
             <div class="col-md-8 col-md-offset-2 ">
                 <h2 style="padding-top:50px;">Stages of Compilation</h2>
                 <p>
-                <h3>The computer misuse act came into effect in 1990. It was designed to restrict unauthorised and malicious use of computer systems.
-                    The act makes it illegal to carry out any of the following:</h3>
+                <h3>Stages of compilation</h3>
                 </p>
-                <ol class="row text-left" >
-                    <li>Unauthorised access to computer material</li>
-                    <li>Unauthorised access with intent to commit or facilitate a crime</li>
-                    <li>Unauthorised modification of computer material</li>
-                    <li>Making, supplying or obtaining anything which can be used in computer misuse offences</li>
-                </ol>
+                <ul>
+                    <h4 style="background-color:#36f150">The 7 stages in which compilation occurs</h4>
+                    <li>Lexical Analysis</li>
+                    <li>Syntax Analysis</li>
+                    <li>Semantic Analysis</li>
+                    <li>Intermediate Code Generation</li>
+                    <li>Intermediate Code Optmisation</li>
+                    <li>Machine code generation</li>
+                    <li>Machine code optimisation</li>
+                    <p>
+                </ul>
+                <p>
+                  <h3>Source code analysis</h3>
+                </p>
                 <p class="paragraph-small">
-                    The act works in tiers, so each act has more severe consequences than the last.
-                    For example, <br> unauthorised modification of material has worse consequences than basic unauthorised access to data.
-                    Before 1990, there was no protection against data theft or modification, meaning there was nothing that could be done to punish cyber criminals.
-                    This act helped to fight it by giving the means to prosecute those who comitted such acts.
-                    <p></p> Click the image above to learn more.
+                  Source code is found on the hard drive. It is moved into the compiler, all the unnecessary comments of whitespace is removed.Next comes the optimisation,
+                  in which long or complicated procedures are broken down into their fundamental parts. The code is then analysed and any errors found in the form of
+                  Syntax, Semantic, or Lexical are detected, and will stop compilation. Once there are no more errors, the code is then compiled.
                 </p>
+                <ul>
+                    <h4 style="background-color:#36f150">Lexical Analysis</h4>
+                    <li>Source code is stripped of anything unnecessary (e.g. whitespace and comments)</li>
+                    <li>Code is divided into <b>lexemes</b> (Smallest possible pieces of code)</li>
+                    <li>Lexical analyser tries to assign a <b>token</b> to each lexeme.</li>
+                    <li>Tokens include: Identifiers, Keywords, Operators, Literals & Symbols</li>
+                    <li>The end result is a list of lexeme:token pairs</li>
+                    <li>If a lexeme cannot be assigned a token, an error is raised</li>
+
+                    <h4 style="background-color:#36f150">Syntax Analysis</h4>
+                    <li>The stream of generated tokens from the previous process is analysed</li>
+                    <li>The tokens are checked against the rules of the language</li>
+                    <li>Any failures raise an error, e.g. two different data types in one declaration</li>
+                    <li><a href=Computation.html>Tree based data structures</a> are often used in this process</li>
+
+                    <h4 style="background-color:#36f150">Semantic Analysis</h4>
+                    <li>The code is now checked for logical errors</li>
+                    <li>Examples include type mismatch, e.g. assigning an integer to a String</li>
+                    <li>Undeclared variables or trying to access a variable out of scope</li>
+                    <li>Multiple declarations of the same variable in the same scope</li>
+                    <li>Accessing an array with an index out of bounds</li>
+                    <li>As before, an error is returned if a rule is broken</li>
+                    <li>Not all semantic errors can be caught during compilation</li>
+                    <li>Run time errors such as out of bounds integer variable will not be prevented by this step</li>
+                    <p>
+                </ul>
+                <p>
+                  <h3>Code generation and compilation</h3>
+                  <p></p>
+                  <p class='paragraph-small'>This is also where the code is converted into an intermediary language, such as bytecode for Java. At this point, it is determined whether or not the program
+                  will include libraries
+                  within the compiled file. If so, the static linker will fetch the static libraries and add them to the program loader. If the libraries will instead be
+                  dynamic, this step will be skipped for now. Once in the program loader, the dynamic linker will add .dll files to the program. These libraries are dynamic,
+                  so are not included with the compiled program, This means they must be present when the file is executed for the program to fnunction correctly. Once this
+                  process has finished, the loader loads the file into RAM.
+                  </p>
+                  <img src='../img/loader.png'>
             </div>
         </div>
     </div>
