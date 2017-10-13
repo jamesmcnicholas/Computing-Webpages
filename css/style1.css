@@ -63,7 +63,7 @@ a:focus,a:active,button {
 /****************** SECTIONS *************************/
 header#top-section {
 		position:relative;
-		overflow:hidden;
+
 		padding-top:0px;
 		background:#111;
 		min-height:730px;
@@ -122,7 +122,7 @@ section {
 		width:100%;
 		min-width:100%;
 		position:relative;
-		overflow:hidden;
+
 }
  #Section-1 {
 	background-color:#4ba2dc;
@@ -414,7 +414,7 @@ ul {
 	margin-top:15px;
 }
 .bx-wrapper .testimonials-carousel-context {
-	overflow:hidden;
+
 	font-size:17px;
 	line-height:29px;
 	min-height:300px;
@@ -607,7 +607,7 @@ input,button,select,textarea {
 #slide_1 {
 	height:730px;
 	position:relative;
-	overflow:hidden;
+
 	padding-top:0px;
 	background:#111;
 	height:730px;
@@ -633,7 +633,7 @@ input,button,select,textarea {
 #slide_2 {
 	height:730px;
 	position:relative;
-	overflow:hidden;
+
 	padding-top:0px;
 	background:#111;
 	height:730px;
@@ -659,7 +659,7 @@ input,button,select,textarea {
 #slide_3 {
 	height:730px;
 	position:relative;
-	overflow:hidden;
+
 	padding-top:0px;
 	background:#111;
 	height:730px;
@@ -1091,7 +1091,7 @@ ul.social-icons li a i {
 	-moz-transition-property:-moz-transform;
 	-o-transition-property:-o-transform;
 	transition-property:transform;
-	overflow:hidden;
+
 }
 ul.social-icons li a i:hover {
 	-webkit-transform:rotate(360deg);
@@ -1225,7 +1225,7 @@ ul.social-icons li a:hover {
 }
 /* Caption Style 3 */
 .cs-style-3 figure {
-	overflow:hidden;
+
 }
 .cs-style-3 figure img {
 	-webkit-transition:-webkit-transform 0.4s;
@@ -1285,7 +1285,7 @@ ul.social-icons li a:hover {
 	transform-style:preserve-3d;
 }
 .cs-style-4 figure>div {
-	overflow:hidden;
+
 }
 .cs-style-4 figure img {
 	-webkit-transition:-webkit-transform 0.4s;
@@ -1586,7 +1586,7 @@ canvas {
 
 #stats{
   border-radius: 3px 3px 0 0;
-  overflow: hidden;
+
 }
 
 .count-particles{

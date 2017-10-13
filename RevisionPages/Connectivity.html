@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link type="text/css" href="../css/style.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link type="text/css" href="../css/style.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
+
 <body class="Connectivity">
-<div class="navigation">
+  <div class="navigation">
     <a href="index.html" class="button">Home</a>
     <a href="Processing.html" class="button">Processing</a>
     <a href="Systems.html" class="button">Systems</a>
@@ -14,143 +16,135 @@
     <a href="Data.html" class="button">Data</a>
     <a href="Computation.html" class="button">Computation</a>
     <a href="Connectivity.html" class="button">Connectivity</a>
-</div>
-<div class="container" id="home">
+  </div>
+  <div class="container" id="home">
     <div class="row text-center">
-        <div class="col-md-12" >
-            <h1 class="head-main"> <i class="fa fa-desktop fa-2x"></i>CONNECTIVITY</h1>
-            <h2 class="head-sub-main">A Level Computer Science</h2>
-        </div>
+      <div class="col-md-12">
+        <h1 class="head-main"> <i class="fa fa-desktop fa-2x"></i>CONNECTIVITY</h1>
+        <h2 class="head-sub-main">A Level Computer Science</h2>
+      </div>
     </div>
-</div>
-</div>
-<section class="color-white " id="about"  >
-    <div class="container" >
-        <div class="row text-center" >
-            <div class="col-md-8 col-md-offset-2 ">
-                <h2 style="padding-top:50px;">Compression</h2>
-                <h3>Lossy vs lossless compression</h3>
-                <ul>
-                  <h4 style="background-color:#7768e8">Some basic rules</h4>
-                    <li>In lossless compression, not every byte of data is stored</li>
-                    <li>Lossy compression is used when some data can be missing (e.g. in music files)</li>
-                    <li>Lossless compression is used when all data must be preserved (e.g. in a text document)</li>
-                    <li>Examples of lossless compression include run-length encoding and dictionary encoding</li>
-                    <p>
-                </ul>
-                <p></p>
-                <h3>Run length encoding</h3>
-                <p class="paragraph-small">
-                    Run length encoding works by countng how many of each repeated data folow each other. Then, this is noted as a shorter way of representing that string of data.
-                    For example, 444444 could be compressed into 6 '4's. This method however, is often used for images that do not want to lose any fidelity, such as PNG files.
-                </p>
-                <img src='../img/RLE.png'></img>
-                <h3>Dictionary encoding</h3>
-                <p class='paragraph-small'>
-                  Dictionary encoding is another method of lossless compression. It works by assigning values to each individual item in a data set. This method works
-                  especially well for files such as text documents. As every word is saved and can be referenced, no data is lost. In documents in which contain a lot of
-                  words, this method of compression can vastly reduce file size
-                  <p>
-                  <img src='../img/dict.jpg'></img>
-                </p>
-                <h3>Huffman Coding</h3>
-                  <p class="paragraph-small">
-                    Huffman coding is an optimised dictionary encodng method where the frequency of items occuring affects the length of code used to denote them.
-                    The more frequently a word is used, Binary trees are structures built by building down from the most frequent words down to the least frequent at the bottom.
-                    Each word (assigned to a "node") is referenced by a series of left and right directions reffered to as 1s and 0s. 0 refers to left and 1 refers to right at
-                    any intersection. Below demonstrates a basic binary tree for "Happy Birthday to you"
-                    <img src='../img/binaryTree.png' align="middle">
+  </div>
+  </div>
+  <section class="color-white " id="about">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-8 col-md-offset-2 ">
+          <h2 style="padding-top:50px;">Compression</h2>
+          <h3>Lossy vs lossless compression</h3>
+          <ul>
+            <h4 style="background-color:#7768e8">Some basic rules</h4>
+            <li>In lossless compression, not every byte of data is stored</li>
+            <li>Lossy compression is used when some data can be missing (e.g. in music files)</li>
+            <li>Lossless compression is used when all data must be preserved (e.g. in a text document)</li>
+            <li>Examples of lossless compression include run-length encoding and dictionary encoding</li>
+            <p>
+          </ul>
+          <p></p>
+          <h3>Run length encoding</h3>
+          <p class="paragraph-small">
+            Run length encoding works by countng how many of each repeated data folow each other. Then, this is noted as a shorter way of representing that string of data. For example, 444444 could be compressed into 6 '4's. This method however, is often used for
+            images that do not want to lose any fidelity, such as PNG files.
+          </p>
+          <img src='../img/RLE.png'></img>
+          <h3>Dictionary encoding</h3>
+          <p class='paragraph-small'>
+            Dictionary encoding is another method of lossless compression. It works by assigning values to each individual item in a data set. This method works especially well for files such as text documents. As every word is saved and can be referenced, no data
+            is lost. In documents in which contain a lot of words, this method of compression can vastly reduce file size
+            <p>
+              <img src='../img/dict.jpg'></img>
+            </p>
+            <h3>Huffman Coding</h3>
+            <p class="paragraph-small">
+              Huffman coding is an optimised dictionary encodng method where the frequency of items occuring affects the length of code used to denote them. The more frequently a word is used, Binary trees are structures built by building down from the most frequent
+              words down to the least frequent at the bottom. Each word (assigned to a "node") is referenced by a series of left and right directions reffered to as 1s and 0s. 0 refers to left and 1 refers to right at any intersection. Below demonstrates
+              a basic binary tree for "Happy Birthday to you"
+              <img src='../img/binaryTree.png' align="middle">
 
-            </div>
         </div>
+      </div>
     </div>
-</section>
-<section class=" color-light"  >
-    <div class="container" >
+  </section>
+  <section class=" color-light">
+    <div class="container">
 
-        <div class="row text-center" >
-            <div class="col-md-12">
-                <h2>Network Security</h2>
-                <p>
-                <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
-                <ul class="row text-left">
-                    <li>Personal data should be obtained and processed fairly amnd lawfully </li>
-                    <li>Personal data can be held only for specified and lawful purposes </li>
-                    <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
-                    <li>Personal data should be accurate and kept up-to-date </li>
-                    <li>Personal data should not be kept for longer than is necessary </li>
-                    <li>Data must be processed in accordance with the rights of the data subject </li>
-                    <li>Appropriate security measures must be taken against unauthorised access </li>
-                    <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
-                </ul>
-                The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br>
-                This includes racial or ethnic origin, political opinions and religious beliefs, among the obvious such as name and address. In some cases, collection<br>
-                of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br>
-                The police force will need to know if new recruits have any previous criminal convictions.
-                </p>
-            </div>
-
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2>Network Security</h2>
+          <p>
+            <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
+            <ul class="row text-left">
+              <li>Personal data should be obtained and processed fairly amnd lawfully </li>
+              <li>Personal data can be held only for specified and lawful purposes </li>
+              <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
+              <li>Personal data should be accurate and kept up-to-date </li>
+              <li>Personal data should not be kept for longer than is necessary </li>
+              <li>Data must be processed in accordance with the rights of the data subject </li>
+              <li>Appropriate security measures must be taken against unauthorised access </li>
+              <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
+            </ul>
+            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
+            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
+            force will need to know if new recruits have any previous criminal convictions.
+          </p>
         </div>
+
+      </div>
     </div>
-</section>
-<section class="color-white " id="work-sec"  >
-    <div class="container" >
+  </section>
+  <section class="color-white " id="work-sec">
+    <div class="container">
 
-        <div class="row text-center" >
-            <div class="col-md-8 col-md-offset-2 ">
-                <h2>Encryption and Hashing</h2>
+      <div class="row text-center">
+        <div class="col-md-8 col-md-offset-2 ">
+          <h2>Encryption and Hashing</h2>
 
-                <h3>The Regulation of Investigatory Powers Act was passed in 2000.</h3>
-                The main purpose of this act is to provide restraints for security services
-                and the police when investigating and surveying digital data and communications of individuals.
-                The act also makes it a crime for anyone unauthorised by the act to carry out surveilance and monitoring of communicatons.
-                The European Court of Human Rights stated that UK surveillance laws were unclear and that there was nothing in place
-                to prevent abuses of power by organisations regarding the interception of electronic communications.
-                It was decided that UK surveillance laws and practice must be tighter in order to protect the individual's rights to privacy.
-                As a result, the act was passed.
-                <p>
-                <p> The idea behind allowing these organisations to intercept and monitor comunications is to achieve the following:
-                <ul class ="row text-left">
-                    <li>Prevent or detect crimes</li>
-                    <li>Prevent public disorder from occurring</li>
-                    <li>To ensure national security and the safety of the general public</li>
-                    <li>To investigate or detect any abnormal or illegal use of telecommunication systems.</li>
-                </ul>
-            </div>
+          <h3>The Regulation of Investigatory Powers Act was passed in 2000.</h3> The main purpose of this act is to provide restraints for security services and the police when investigating and surveying digital data and communications of individuals. The act also makes it a crime for anyone unauthorised by the act to
+          carry out surveilance and monitoring of communicatons. The European Court of Human Rights stated that UK surveillance laws were unclear and that there was nothing in place to prevent abuses of power by organisations regarding the interception
+          of electronic communications. It was decided that UK surveillance laws and practice must be tighter in order to protect the individual's rights to privacy. As a result, the act was passed.
+          <p>
+            <p> The idea behind allowing these organisations to intercept and monitor comunications is to achieve the following:
+              <ul class="row text-left">
+                <li>Prevent or detect crimes</li>
+                <li>Prevent public disorder from occurring</li>
+                <li>To ensure national security and the safety of the general public</li>
+                <li>To investigate or detect any abnormal or illegal use of telecommunication systems.</li>
+              </ul>
         </div>
-        <div class="row text-center g-pad-bottom" >
-            <div class="col-md-4">
-            </div>
-</section>
-<section class=" color-light"  >
-    <div class="container" >
-
-        <div class="row text-center" >
-            <div class="col-md-12">
-                <h2>Web Technologies</h2>
-                <p>
-                <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
-                <ul class="row text-left">
-                    <li>Personal data should be obtained and processed fairly amnd lawfully </li>
-                    <li>Personal data can be held only for specified and lawful purposes </li>
-                    <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
-                    <li>Personal data should be accurate and kept up-to-date </li>
-                    <li>Personal data should not be kept for longer than is necessary </li>
-                    <li>Data must be processed in accordance with the rights of the data subject </li>
-                    <li>Appropriate security measures must be taken against unauthorised access </li>
-                    <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
-                </ul>
-                The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br>
-                This includes racial or ethnic origin, political opinions and religious beliefs, among the obvious such as name and address. In some cases, collection<br>
-                of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br>
-                The police force will need to know if new recruits have any previous criminal convictions.
-                </p>
-            </div>
-
+      </div>
+      <div class="row text-center g-pad-bottom">
+        <div class="col-md-4">
         </div>
+  </section>
+  <section class=" color-light">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2>Web Technologies</h2>
+          <p>
+            <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
+            <ul class="row text-left">
+              <li>Personal data should be obtained and processed fairly amnd lawfully </li>
+              <li>Personal data can be held only for specified and lawful purposes </li>
+              <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
+              <li>Personal data should be accurate and kept up-to-date </li>
+              <li>Personal data should not be kept for longer than is necessary </li>
+              <li>Data must be processed in accordance with the rights of the data subject </li>
+              <li>Appropriate security measures must be taken against unauthorised access </li>
+              <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
+            </ul>
+            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
+            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
+            force will need to know if new recruits have any previous criminal convictions.
+          </p>
+        </div>
+
+      </div>
     </div>
-</section>
-</div>
-<h4 align="right">James McNicholas 2017</h4>
+  </section>
+  </div>
+  <h4 align="right">James McNicholas 2017</h4>
 </body>
+
 </html>

@@ -1,26 +1,54 @@
 body {
-    font-family:'Open Sans', sans-serif;
-    font-size:14px;
-    background-color:#696969;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #696969;
 }
 
-.Processing {background-color: #f95436;}
-.Systems {background-color: #f99436;}
-.Programming{background-color: #f9ce36;}
-.Development{background-color: #36f160;}
-.Data{background-color: #4bf4d0;}
-.Computation{background-color: #6bb6e8;}
-.Connectivity{background-color: #7768e8;}
-.Society{background-color:#ac68e8;}
-.Home{background-color:#4d4d4d;}
+.Processing {
+  background-color: #f95436;
+}
+
+.Systems {
+  background-color: #f99436;
+}
+
+.Programming {
+  background-color: #f9ce36;
+}
+
+.Development {
+  background-color: #36f160;
+}
+
+.Data {
+  background-color: #4bf4d0;
+}
+
+.Computation {
+  background-color: #6bb6e8;
+}
+
+.Connectivity {
+  background-color: #7768e8;
+}
+
+.Society {
+  background-color: #ac68e8;
+}
+
+.Home {
+  background-color: #4d4d4d;
+}
 
 .text-center {
-    margin:0 auto;
-    text-align:center;
+  margin: 0 auto;
+  text-align: center;
 }
+
 .text-left {
-    text-align:left;
+  text-align: left;
 }
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -31,6 +59,7 @@ body {
   background-size: cover;
   background-position: 50% 50%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -43,145 +72,165 @@ body {
   left: 0;
   z-index: 0;
 }
+
 div {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 h1 {
-    line-height:80px;
-    font-weight:900;
-    font-size:60px;
-    padding:0px 20px 5px 20px;
-    font-family:'Open Sans', sans-serif;
+  line-height: 80px;
+  font-weight: 900;
+  font-size: 60px;
+  padding: 0px 20px 5px 20px;
+  font-family: 'Open Sans', sans-serif;
 }
+
 h2 {
-    line-height:40px;
-    font-weight:900;
-    font-size:30px;
-    padding:0px 20px 5px 20px;
-    text-transform:uppercase;
-    font-family:'Open Sans', sans-serif;
+  line-height: 40px;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 0px 20px 5px 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
+
 h3 {
-    line-height:30px;
-    padding-bottom:0px;
-    font-family:'Open Sans', sans-serif;
+  line-height: 30px;
+  padding-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
 }
+
 h4 {
-    line-height:5px;
-    padding: 15px 32px;
-    font-family:'Open Sans', sans-serif;
-    text-align: center;
-    color: white;
-    background: rgba(0,0,0, 0.25);
-    margin: auto;
-
-
+  line-height: 5px;
+  padding: 15px 32px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  margin: auto;
 }
+
 h6 {
-    line-height:20px;
-    padding-bottom:1px;
-    font-family:'Open Sans', sans-serif;
+  line-height: 20px;
+  padding-bottom: 1px;
+  font-family: 'Open Sans', sans-serif;
 }
+
 p {
-    font-weight:300;
-    line-height:30px;
+  font-weight: 300;
+  line-height: 30px;
 }
+
 section {
-    padding-top:10px;
-    padding-bottom:30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .color-white {
-    background-color:#fff;
+  background-color: #fff;
 }
+
 .spacing-small {
-    line-height:120%;
-    width: 70%;
-    margin: 0 auto;
+  line-height: 120%;
+  width: 70%;
+  margin: 0 auto;
 }
+
 .paragraph-small {
-    line-height:120%;
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
+  line-height: 120%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
 }
+
 .color-light {
-    background-color:#E9E9E9;
+  background-color: #E9E9E9;
 }
+
 .head-main {
-    font-size:80px;
-    font-weight:900;
-    color:#fff;
-    padding:150px 20px 10px 20px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #fff;
+  padding: 150px 20px 10px 20px;
 }
+
 .head-sub-main {
-    font-size:40px;
-    font-weight:600;
-    color:#fff;
-    padding:0px 20px 150px 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0px 20px 150px 20px;
 }
+
 .button {
-    background-color:rgba(0, 0, 0, 0);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin:auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
 }
 
 ul {
-    border-radius: 10px;
-    list-style-position: inside;
-    text-align:left;
-    padding-left:30%;
-    padding-right:30%;
+  border-radius: 10px;
+  list-style-position: inside;
+  text-align: left;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 /* Only add border to bottom of <li> */
+
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Get rid of the last <li>'s bottom border to stop overlap with <ul>'s border */
+
 /* :last-child works in IE7+ */
+
 li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 /* Get the number and float it right */
-span {
-    float: right;
-}
-​ }
-.fixed {
-    position: fixed;
-    top: 0;
-    min-height: 50px;
-    z-index: 99;
-}
-.navigation {
-    background: rgba(0,0,0, 0.25);
-    text-align:center;
-    margin:auto;
-}
-.container {
-    background: rgba(255, 255, 255, 0;
-    height: 500px;
-    margin: 0 auto;
-    position: relative;
-    top: 220px;
-    width: 40%;
-    overflow:scroll;
-}
-* ---- reset ---- */
 
-body {
+span {
+  float: right;
+}
+
+​
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  min-height: 50px;
+  z-index: 99;
+}
+
+.navigation {
+  background: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 220px;
+  width: 40%;
+  overflow: scroll;
+}
+
+* ---- reset ---- */ body {
   margin: 0;
-  font:normal 75% Arial, Helvetica, sans-serif;
+  font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 canvas {
@@ -191,11 +240,9 @@ canvas {
 
 /* ---- particles.js container ---- */
 
-
-
 /* ---- stats.js ---- */
 
-.count-particles{
+.count-particles {
   background: #000022;
   position: absolute;
   top: 48px;
@@ -211,20 +258,19 @@ canvas {
   font-weight: bold;
 }
 
-.js-count-particles{
+.js-count-particles {
   font-size: 1.1em;
 }
 
-#stats,
-.count-particles{
+#stats, .count-particles {
   -webkit-user-select: none;
 }
 
-#stats{
+#stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }
 
-.count-particles{
+.count-particles {
   border-radius: 0 0 3px 3px;
 }
