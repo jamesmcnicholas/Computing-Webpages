@@ -47,6 +47,7 @@
             <p>
           </ul>
           <p>
+            <hr class='paragraph-small'>
             <h3>Source code analysis</h3>
           </p>
           <p class="paragraph-small">
@@ -62,13 +63,13 @@
             <li>The end result is a list of lexeme:token pairs</li>
             <li>If a lexeme cannot be assigned a token, an error is raised</li>
 
-            <h4 style="background-color:#36f150">Syntax Analysis</h4>
+            <h4 style="background-color:#f9ce36">Syntax Analysis</h4>
             <li>The stream of generated tokens from the previous process is analysed</li>
             <li>The tokens are checked against the rules of the language</li>
             <li>Any failures raise an error, e.g. two different data types in one declaration</li>
             <li><a href=Computation.html>Tree based data structures</a> are often used in this process</li>
 
-            <h4 style="background-color:#36f150">Semantic Analysis</h4>
+            <h4 style="background-color:#f95436">Semantic Analysis</h4>
             <li>The code is now checked for logical errors</li>
             <li>Examples include type mismatch, e.g. assigning an integer to a String</li>
             <li>Undeclared variables or trying to access a variable out of scope</li>
@@ -80,9 +81,23 @@
             <p>
           </ul>
           <p>
-            <h3>Code generation and compilation</h3>
+            <hr class='paragraph-small'>
+            <h3>Code Generation and Optimisation</h3>
             <p></p>
-            <p class='paragraph-small'>This is also where the code is converted into an intermediary language, such as bytecode for Java. At this point, it is determined whether or not the program will include libraries within the compiled file. If so, the static linker will fetch
+            <p class='paragraph-small'>After the analysis stages are complete, the code moves on to the next step.
+              Here, it is translated into an intermediate code. In languages such as java, this is the final step,
+              as bytecode is what's run in the JVM. In other languages, such as C++, this stage is just another stage
+              in the compilation. Intermediate code is <b>machine independant</b>, which means it can be run on any architecture.
+              Though it has been translated, the  intermediary code is <b>not</b> machine code yet.<br><br>
+              The code is optimised so that it can run as efficiently as possible a d therefore require less resources, without
+              altering the function as intended. Examples include removing useless variables and simplifying loops.
+              <img src='../img/optimise.png'>
+            </p>
+            <p></p>
+            <hr class='paragraph-small'>
+            <h3>Final Compilation</h3>
+            <p></p>
+            <p class='paragraph-small'>At this point, it is determined whether or not the program will include libraries within the compiled file. If so, the static linker will fetch
               the static libraries and add them to the program loader. If the libraries will instead be dynamic, this step will be skipped for now. Once in the program loader, the dynamic linker will add .dll files to the program. These libraries are
               dynamic, so are not included with the compiled program, This means they must be present when the file is executed for the program to fnunction correctly. Once this process has finished, the loader loads the file into RAM.
             </p>
