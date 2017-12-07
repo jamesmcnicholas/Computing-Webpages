@@ -4,6 +4,20 @@ body {
   background-color: #696969;
 }
 
+#first {
+    width: 50%;
+    float: left;
+
+}
+#second {
+    width: 50%;
+    float: left;
+
+}
+#container {
+    margin: auto;
+}
+
 .Processing {
   background-color: #f95436;
 }
@@ -20,13 +34,9 @@ body {
   background-color: #36f160;
 }
 
-.Data {
-  background-color: #4bf4d0;
-}
+.Data {background-color: #4bf4d0;}
 
-.Computation {
-  background-color: #6bb6e8;
-}
+.Computation {background-color: #6bb6e8;}
 
 .Connectivity {
   background-color: #7768e8;
@@ -227,6 +237,7 @@ span {
   width: 40%;
   overflow: scroll;
 }
+
 
 * ---- reset ---- */ body {
   margin: 0;
