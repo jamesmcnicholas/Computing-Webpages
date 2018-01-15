@@ -75,25 +75,41 @@
           <h2>Database Transactions</h2>
           <p>
             <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
-            <ul class="row text-left">
-              <li>Personal data should be obtained and processed fairly amnd lawfully </li>
-              <li>Personal data can be held only for specified and lawful purposes </li>
-              <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
-              <li>Personal data should be accurate and kept up-to-date </li>
-              <li>Personal data should not be kept for longer than is necessary </li>
-              <li>Data must be processed in accordance with the rights of the data subject </li>
-              <li>Appropriate security measures must be taken against unauthorised access </li>
-              <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
-            </ul>
-            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
-            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
-            force will need to know if new recruits have any previous criminal convictions.
+            <p class="paragraph-small" style="">
+              <ul>
+                <h4 style="background-color:#f99436">New SQL operators</h4>
+                <li>LIKE - Used to find data matching an example</li>
+                <li>JOIN - Used to define table joins</li>
+                <li>COUNT() - Returns the number of rows that matches a specified criteria.</li>
+                <li>GROUP BY - Used with aggregate functions to group the result set</li>
+                <li>% - Refers to any length string, can be prefaced</li>
+                <li>* - Refers to </li>
+                <li>_ - represents any one character</li>
+              </ul>
+            </p>
+            <p class="spacing-small">
+              <img src=../img/img_innerjoin.gif><br><br>
+              Inner joins return a set of results where both tables match. Other joins exist
+              for both left and right, however are not needed for the exam.<br><br>
+              <img src=../img/innerjoin.png>
+            </p>
+
+            <h2>Referrantial Integrity</h2>
+              <p class="paragraph-small">
+                Referrantial integrity states that foreign keys should always point to an existing primary key.
+                If an operation is going to delete an item with a primary key value that another table's foreign key references,
+                there are a few options. The first is to prevent the deletion operation. Another is to set the foregin values
+                to null, however this is often prohibited. The final option is to cascade delete all entries that depend on that key.
+                This can have unforseen consequences as many entries can be removed.<br><br>
+                In many systems, deletion is avoided all together and a "deleted" column is added to
+                the table. This way, items can be marked as deleted without actually deleting them and causing conflicts.
+            </p>
           </p>
         </div>
       </div>
     </div>
   </section>
-  <h4>James McNicholas 2017</h4>
+  <h4>James McNicholas 2017-2018</h4>
 </body>
 
 </html>
