@@ -87,30 +87,73 @@
   </section>
   <section class=" color-light">
     <div class="container">
-
       <div class="row text-center">
         <div class="col-md-12">
           <h2>Advanced Sorts</h2>
-          <p>
-            <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
-            <ul class="row text-left">
-              <li>Personal data should be obtained and processed fairly amnd lawfully </li>
-              <li>Personal data can be held only for specified and lawful purposes </li>
-              <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
-              <li>Personal data should be accurate and kept up-to-date </li>
-              <li>Personal data should not be kept for longer than is necessary </li>
-              <li>Data must be processed in accordance with the rights of the data subject </li>
-              <li>Appropriate security measures must be taken against unauthorised access </li>
-              <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
-            </ul>
-            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
-            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
-            force will need to know if new recruits have any previous criminal convictions.
-          </p>
-        </div>
-
+          <h3>Basic pseudocode for bubble and insertion sorts can be seen below</h3>
+            <div class="codebox">
+              <img src=../img/bubble.png>
+            </div>
+            <div class="codebox">
+              <img src=../img/insertion.png height="200">
+            </div>
+            <p>
+            <div id=first>
+              <ul style="padding-left: 5%;padding-right: 5%">
+                <h4 style="background-color:#6bb6e8">Mergesort Process</h4>
+                <li>1. Create stacks to store pairs of numbers that will represent left and right value</li>
+                <li>2. Add the the start and end index of the array to the stacks</li>
+                <li>3. Pop the next pair off the stacks, store these in variables called 'left' and 'right' </li>
+                <li>4. Create a variable called 'wall' and make it equal to left </li>
+                <li>5. Take note of the value of the list at the right most index, call this 'pivot' </li>
+                <li>6. Progress from left to one before right, if the value found is less than pivot then... </li>
+                <li>7. ...swap it with the value at the wall and move the wall along one </li>
+                <li>8. When you reach the end, swap the rightmost element with the wall </li>
+                <li>9. If wall - 1 is greater than left, add left and wall - 1 as to the stacks </li>
+                <li>10. If wall + 1 is less than right, add wall + 1 and right to the stacks </li>
+                <li>11. If the stack is not empty, return to stage 3 </li>
+                <li>12. If stack is empty, the list has been successfully sorted </li>
+                <p>
+              </ul>
+              <div class="codebox">
+                <img src=../img/merge.png>
+              </div>
+              <br>
+              Merge sorts are very effective at tackling large data sets. Their ability to break down the data into chunks
+              and sort those greatly reduces the number of iterations needed. However,
+              the sort is more intensive than others, and is not as effective as say, a bubble
+              sort on much smaller data sets due to this.
+            </div>
+            <div id=second>
+              <ul style="padding-left: 5%;padding-right: 5%">
+                <h4 style="background-color:#6bb6e8">Iterative Quicksort</h4>
+                <li>1. Arrange the list you wish to sort into sublists of length one </li>
+                <li>2. Prepare a queue and add each of the sublists to the queue </li>
+                <li>3. Take two sublists from the end of the queue and prepare a new empty sublist</li>
+                <li>4. Look at the first item from each sublist, add the smallest to the new sublist </li>
+                <li>5. Repeat stage 3 until one of the two sublists is empty </li>
+                <li>6. Add all of the other non-empty sublist to the end of the new sublist </li>
+                <li>7. Add the new sublist to the start of the queue </li>
+                <li>8. If the queue has more than one item left, return to stage 2</li>
+                <li>9. If the queue only has one item list, you are done - that sublist is the sorted list </li>
+                  <p>
+                <div class="codebox">
+                  <img src="../img/quick.png">
+                </div>
+              </ul>
+              <p>
+              The quicksort is efficient at sorting items, but is also easy to implement
+              It is widely used sort for lists of any size, however can become
+              slower when sorting large lists if the chosen pivot is unsuccessful.
+          </div>
       </div>
+
     </div>
+  </div>
+  <p>
+    <p>
+      <p>
+        .
   </section>
   <section class="color-white " id="work-sec">
     <div class="container">

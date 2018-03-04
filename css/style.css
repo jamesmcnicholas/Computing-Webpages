@@ -183,6 +183,23 @@ section {
   margin: auto;
 }
 
+.codebox {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: auto;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 16px/1 "Courier New", Courier, monospace;
+  color: rgba(255,0,0,1);
+  text-align: left;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.76) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.76) ;
+  display: inline-block;
+}
+
 ul {
   border-radius: 10px;
   list-style-position: inside;
@@ -247,41 +264,4 @@ span {
 canvas {
   display: block;
   vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-
-/* ---- stats.js ---- */
-
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats, .count-particles {
-  -webkit-user-select: none;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
 }
