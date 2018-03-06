@@ -7,6 +7,8 @@ body {
 #first {
     width: 50%;
     float: left;
+    padding-left: 50px;
+    text-align: left;
 
 }
 #second {

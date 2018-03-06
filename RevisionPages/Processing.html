@@ -52,23 +52,57 @@
         <div class="col-md-12">
           <h2>Pipelining and Parallel Processing</h2>
           <p>
-            <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
+            <h3>Flynn's Taxonomy</h3>
             <ul class="row text-left">
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
-              <li>Placeholder text</li>
+              <h4 style="background-color:#f95436">Instructions vs Data Streams</h4>
+              <li>SISD: Single instruction Single Datastream - <i>Single core CPUs</i></li>
+              <li>SIMD: Single Instruction Multiple Datastreams, Vector/Array processors - <i>GPUs (The same instruction on lots of data)</i></li>
+              <li>MIMD: Multiple Instructions Multiple Datastreams - <i>Multi core CPUs</i></li>
+              <li>MISD: Multiple instructions on one dataset - <i>Not really used/unusual, but possible</i></li>
             </ul>
-            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
-            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
-            force will need to know if new recruits have any previous criminal convictions.
           </p>
-        </div>
 
+          <h3>Fetch-Decode-Execute Cycle</h3>
+          <img src="../img/VonNeumann.png" width="50%">
+          <ul class="row text-left">
+            <h4 style="background-color:#f95436">FETCH</h4>
+            <li> <b>1.</b> Address of the next instruction is taken from the PC to the MAR </li>
+            <li> <b>2.</b> The Control Unit loads the address onto the address bus and sends a signal to main memory to read the instruction held at the address</li>
+            <li> <b>3.</b> The instruction is passed to the data bus and copied to the MDR. The PC is incremented to hold the next instruction address</li>
+            <li> <b>4.</b> The contents of the MDR are copied to the CIR</li>
+            <h4 style="background-color:#f95436">DECODE</h4>
+            <li> <b>5.</b> The instrucion in the CIR is decoded by the Control Unit and split into opcode and operand</li>
+            <li> <b>6.</b> If the operand holds an address it is copied to the MAR</li>
+            <h4 style="background-color:#f95436">EXECUTE</h4>
+            <li> <b>7.</b> The instruction (opcode) is carried out on the operand</li>
+          </ul>
+          <h3>Pipelining</h3>
+            <div id="container">
+              <div id="first" padding-left="10px">
+                <p>
+                Pipelining is a process in which a CPU can complete multiple instructions at once.
+                This means the CPU does not have to wait for one instrucion to finish before starting work on another.
+                This optimises the Fetch-Decode-Execute cycle, resulting in much faster processing of instructions.
+                The instructions are queued up, then begin executing. There are several stages of instruction execution,
+                ranging from architecture to architecture. Modern x86 chips can have up to 20 pipeline stages.
+                <p>
+                The RISC pipeline has five stages, IF, ID, EX, MEM and WB, these refer to Fetch, Decode, Execute,
+                Memory Access and Register Writeback, respectively. Each of these must be carried out on every instruction sent to the CPU, in order.
+                Pipelining is applied after each stage to queue up the next instruction, as can be seen in the diagram to the right.
+                During each iteration, one instruction is executed, next is decoded, the following is fetched, and so on.
+              </div>
+              <div id="second">
+                <img src="../img/pipeline.png">
+              </div>
+        </div>
+        <p>
+           <h3>Scheduling</h3>
+           When supplied a list of tasks, processors need to be able to organise and deal with them in the most efficient manner.
+           Without scheduling, long tasks would occupy the CPU and prevent multi-tasking and other applications from running effectively.
+           
+        </p>
+
+        </div>
       </div>
     </div>
   </section>
