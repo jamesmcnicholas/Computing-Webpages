@@ -9,7 +9,6 @@ body {
     float: left;
     padding-left: 50px;
     text-align: left;
-
 }
 #second {
     width: 50%;
@@ -17,7 +16,28 @@ body {
     padding-left:50px;
     text-align: left;
     padding-right: 50px
+}
 
+#first-1 {
+    width: 33%;
+    float: left;
+    padding-left: 50px;
+    text-align: left;
+}
+#second-1 {
+    width: 33%;
+    float: left;
+    padding-left:50px;
+    text-align: left;
+    padding-right: 50px
+}
+
+#third-1 {
+    width: 33%
+    float: left;
+    padding-left:50px;
+    text-align: center;
+    padding-right: 50px
 }
 #container {
     margin: auto;

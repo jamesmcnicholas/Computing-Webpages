@@ -33,9 +33,6 @@
         <div class="col-md-8 col-md-offset-2 ">
           <h2 style="padding-top:50px;">Floating Point Arithmetic</h2>
 
-          <a href="https://goo.gl/tyJh7I">
-                    <img src="images/Computer_Misuse_Act.gif" alt="CMA">
-                </a>
           <p>
             <h3>The computer misuse act came into effect in 1990. It was designed to restrict unauthorised and malicious use of computer systems.
                     The act makes it illegal to carry out any of the following:</h3>
@@ -63,21 +60,46 @@
         <div class="col-md-12">
           <h2>Advanced Boolean Algebra</h2>
           <p>
-            <h3>The data protection act was established in 1998. The eight principles are as follows:</h3>
+            <h3>Simplifying boolean algebra can be made easier through use of the the following laws</h3>
             <ul class="row text-left">
-              <li>Personal data should be obtained and processed fairly amnd lawfully </li>
-              <li>Personal data can be held only for specified and lawful purposes </li>
-              <li>Personal data should be adequate, relevant and not excessive for the required purpose </li>
-              <li>Personal data should be accurate and kept up-to-date </li>
-              <li>Personal data should not be kept for longer than is necessary </li>
-              <li>Data must be processed in accordance with the rights of the data subject </li>
-              <li>Appropriate security measures must be taken against unauthorised access </li>
-              <li>Personal data cannot be transferred to countries outside the E. U. unless the country has similar legislation to the D.P.A. </li>
+              <h4 style="background-color:#4bf4d0">Boolean Algebra Laws</h4>
+              <li><b>And Laws: </b>A ∧ 0 = 0 | A ∧ 1 = A | A ∧ A = A | A ∧ ¬A = 0</li>
+              <li><b>Or Laws:</b> A V 0 = A | A V 1 = 1 | A V A = A | A V ¬A = 1</li>
+              <li><b>Double Negation Law:</b> ¬¬A = A - Two 'not's cancel out</li>
+              <li><b>Commutative laws:</b> A ∧ B = B ∧ A | A V B = B V A - The order of terms doesn't matter</li>
+              <li><b>Associative laws:</b> (A ∧ B) ∧ C = A ∧ (B ∧ C) | (A V B) V C = A V (B V C) - Brackets dont matter if the sign is the same</li>
+              <li><b>Distributive Laws:</b> A ∧ (B V C) = (A ∧ B) V (A ∧ C) | A ∧ (B ∧ C) = (A V B) ∧ (A V C)</li>
+              <li><b>Absorption Laws:</b> A ∧ (A V B) = A | A V (A ∧ B) = A - Both of these only depend on A</li>
+              <li><b>De Morgan's Laws:</b> ¬(A ∧ B) = (¬A) V (¬B) | ¬(A V B) = (¬A) ∧ (¬B) - The sign is flipped and the brackets expanded</li>
             </ul>
-            The data protection act is designed to do as it states, ensure the safety of personal data. Each principle aims to keep secure data deemed personal.<br> This includes racial or ethnic origin, political opinions and religious beliefs, among
-            the obvious such as name and address. In some cases, collection<br> of such material may be required, for example, a Catholic school who only employs Catholics, might wish to know the religious beliefs of new teachers, while<br> The police
-            force will need to know if new recruits have any previous criminal convictions.
           </p>
+          <h3> Some examples </h3>
+          <div id="container">
+            <div id="first-1" padding-left="10px">
+              <p>
+              <b>Simplify A ∧ B V ¬A V ¬B</b><br>
+                Applying De Morgan's Law: (A ∧ B) V ¬(A ∧ B)<br>
+                Applying OR Law: (A ∧ B) V ¬(A V B) = 1
+              </p>
+            </div>
+
+            <div id="second-1">
+              <p align="center">
+              <b>Simplify Q = ¬(¬(X ∧ ¬Y) ∧ (¬Y V ¬Z))</b><br>
+                De Morgan's 1.: Q = ¬(¬(X ∧ ¬Y) V ¬(Y ∧ Z)<br>
+                De Morgan's 2.: Q = (X ∧ ¬Y) ∧ (Y ∧ Z)
+              </p>
+            </div>
+           <div id="third-1" padding-left="10px">
+             <p align="right">
+               <b>Simplify ¬A V ¬B V ¬(A ∧ B)</b><br>
+               De Morgan's: ¬(A ∧ B) V ¬(A ∧ B)<br>
+               Absorption Law: ¬(A ∧ B)
+             </p>
+           </div>
+
+        </div>
+
         </div>
 
       </div>
@@ -87,22 +109,73 @@
     <div class="container">
 
       <div class="row text-center">
-        <div class="col-md-8 col-md-offset-2 ">
           <h2>Boolean Applications</h2>
 
-          <h3>The Regulation of Investigatory Powers Act was passed in 2000.</h3> The main purpose of this act is to provide restraints for security services and the police when investigating and surveying digital data and communications of individuals. The act also makes it a crime for anyone unauthorised by the act to
-          carry out surveilance and monitoring of communicatons. The European Court of Human Rights stated that UK surveillance laws were unclear and that there was nothing in place to prevent abuses of power by organisations regarding the interception
-          of electronic communications. It was decided that UK surveillance laws and practice must be tighter in order to protect the individual's rights to privacy. As a result, the act was passed.
-          <p>
-            <p> The idea behind allowing these organisations to intercept and monitor comunications is to achieve the following:
-              <ul class="row text-left">
-                <li>Prevent or detect crimes</li>
-                <li>Prevent public disorder from occurring</li>
-                <li>To ensure national security and the safety of the general public</li>
-                <li>To investigate or detect any abnormal or illegal use of telecommunication systems.</li>
-              </ul>
-        </div>
-      </div>
+          <h3> Bitwise Manipulation </h3>
+          <div>
+            <p class="paragraph-small">
+              Bitwise operators can be used to compare and manipulate binary values.
+              They consist of the symbols: & (and), | (or) and ^ (xor). These can
+              be applied to binary values to compare bits in each position. For example,
+              <b>0010 & 0110 would return 0010</b>, as that position is the only one that contains
+              a '1' in both nibbles. On the other hand, <b>0010 | 0110 would return 0110</b>, as
+              it returns a '1' for any position that contains at least one '1'. Lastly,
+              <b>0010 ^ 0110 would return 0100</b>, as '1' is only returned when one or the other
+              contains a '1' but not both
+              <br><br>
+              Other bitwise operators include 'bit shifters'. <b><<</b> will move
+              every didgit one to the left, and <b>>></b> will move them one to the right.
+              These can be applied in statements to <i>shift</i> bits more than one position.
+              For example, 2 << 3 returns 16. This is because 2 can be represented as 0000 0010.
+              Therefore, by shifting three places we get 0001 0000, which is 16 in binary.
+            </p>
+          </div>
+
+          <h3> Drawing logic diagrams </h3>
+          Logic statements can be represented by drawing diagrams. Each 'gate' has a symbol, as shown below.<br><br>
+          <img src="../img/gates.png" width=30%>
+          <h3>Boolean theory can be applied to lots ot real world situations</h3>
+          <div id="container">
+            <div id="first" padding-left="10px">
+              Shown to the right is a <i>bistable latch</i> using NOR gates. the
+              purpose of this circuit is to hold its value until the other input is activated.
+              For example, once it has been turned on, pressing the on button again will do nothing.
+              It's not until the off button is pressed that the output of the circuit changes.
+
+              This circuit works by utilising two NOR gates and feeding the output of each into
+              the other. By default, the system is turned off. As soon as S is activated,
+              the bottom NOR gate deactivates, as one of its inputs is on. This deactivates
+              the path leading to the top gate. This means both of the top inputs are off,
+              turning on the output, Q. As the output from the top NOR leads to the bottom NOR gate,
+              its 'on' state is preserved. The reverse happens when R is triggered to turn the system off.
+            </div>
+
+            <div id="second">
+              <p align="center">
+              <img src=../img/latch.gif>
+            </div>
+          </div>
+
+          <div id="container">
+            <div id="first" padding-left="10px">
+              Other applications contain hundreds of possibilities, including flip flops and adders.
+              A half-adder contains the gates required to add two binary digits. The digits are input
+              and fed into the an XOR gate. If both digits are a zero or one, the result is zero. If
+              both the digits are ones, the result for carry is one. Both the sum and carry digits
+              are returned. A full adder is capable of taking this output and using it to add
+              longer binary strings.
+            </div>
+
+            <div id="second">
+              <p align="center">
+                <u>A Half Adder</u><br>
+                <img src="../img/Half_Adder.png"><br>
+                <u>A Full Adder</u><br>
+                <img src="../img/Full_Adder.png" width="40%"><br>
+            </div>
+          </div>
+
+
       <div class="row text-center g-pad-bottom">
         <div class="col-md-4">
         </div>
