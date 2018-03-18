@@ -15,6 +15,7 @@ body {
 a,a:hover {
 	-webkit-transition:color .25s linear,background-color .15s linear .1s;
 	transition:color .25s linear,background-color .15s linear .1s;
+	color:red;
 }
 @font-face {
   font-family: 'Raleway';
