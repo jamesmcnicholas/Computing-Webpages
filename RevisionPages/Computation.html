@@ -156,24 +156,52 @@
 
       <div class="row text-center">
         <div class="col-md-8 col-md-offset-2 ">
-          <h2>Path Finding</h2>
+          <h2>Pathfinding</h2>
 
-          <h3>The Regulation of Investigatory Powers Act was passed in 2000.</h3> The main purpose of this act is to provide restraints for security services and the police when investigating and surveying digital data and communications of individuals. The act also makes it a crime for anyone unauthorised by the act to
-          carry out surveilance and monitoring of communicatons. The European Court of Human Rights stated that UK surveillance laws were unclear and that there was nothing in place to prevent abuses of power by organisations regarding the interception
-          of electronic communications. It was decided that UK surveillance laws and practice must be tighter in order to protect the individual's rights to privacy. As a result, the act was passed.
+          <h3>DIJKSTRA'S ALGORITHM</h3>
+          <p class="spacing-small">
+          Dijkstra's algorithm is a way of finding the shortest route through a
+          set of connected nodes on a graph. It works by checking every node
+          until the one with the lowest value is found, then adding that to the
+          list and repeating. The full procedure can be seen below.
+          <br><br> Once a value is confirmed to be the
+          shortest route to that node, it is 'boxed', marking it as complete.
+          This algorithm is good at finding the fastest path, however can take
+          a long time, and will only consider faster options when one option becomes
+          too long. For example, traveling london to the Isle of White would
+          consider routes northbound until it became faster to go south, despite
+          it being in the opposite direction.
           <p>
-            <p> The idea behind allowing these organisations to intercept and monitor comunications is to achieve the following:
-              <ul class="row text-left">
-                <li>Prevent or detect crimes</li>
-                <li>Prevent public disorder from occurring</li>
-                <li>To ensure national security and the safety of the general public</li>
-                <li>To investigate or detect any abnormal or illegal use of telecommunication systems.</li>
-              </ul>
+            <ul>
+              <h4 style="background-color:#6bb6e8">Dijkstra's Algorithm</h4>
+              <li>Label the starting vertex as zero value and box it</li>
+              <li>Box the smallest number of those connected to this node</li>
+              <li>From this node, consider the distance to every other node</li>
+              <li>If the distance is less than the value already at the vertex, cross it out and replace it with the new distance</li>
+              <li>If there is no value at this vertex, write down the value</li>
+              <li>Repeat from step 2 until the destination is reached</li>
+            </ul>
+            <img src="../img/dijkstra.gif">
+            <p>
+          Pseudocode for this algorithm is as follows:
+          <div class=codebox>
+            <img src="../img/dijkstraPseudo.png">
         </div>
+          <h3>THE A* ALGORITHM</h3>
+          <p class=spacing-small>
+          The A* algorithm uses a heuristic (best guess) approach to find the shortest route ot a destination. Instead of checking
+          every possible route, it measures each node around a node and checks the distance to it. The distance is determined by its position.
+          Adjacent nodes are given a value of 10, and diagonals a value of 14 (this is due to pythagoras, but numbers are multiplied by 10 and rounded).
+          Each node has three values, a <b>G cost - the distance from the starting node</b>, an <b>H cost - distance from the end node</b>, and an <b>F cost - G cost + H cost</b>.
+          Each iteration, the node with the smallest F-cost is 'explored'. After a node has been explored, each connected node is given an F cost and the process repeats until the end is reached.
+          <p>
+          <img src=../img/AStar.gif width="30%">
+          <p>
+          Pseudocode for this algorithm is as follows
+          <div class=codebox>
+            <img src=../img/AStarPseudo.png>
+          </div>
       </div>
-      <div class="row text-center g-pad-bottom">
-        <div class="col-md-4">
-        </div>
   </section>
   <section class=" color-light">
     <div class="container">
