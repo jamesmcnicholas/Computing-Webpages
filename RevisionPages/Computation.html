@@ -211,7 +211,19 @@
           <h2>Big O notation</h2>
           <p>
             <h3>The efficiency of algorithms can be measured using Big O notation</h3>
-            Big O notation displays the efficiency of a process through the amount of iterations and time it will take
+            <p class="spacing-small">
+            Big O notation displays the efficiency of a process through the
+            amount of iterations and time it will take as the input number
+            grows. A single linear loop will have a time complexity of O(n).
+            A loop within a loop is O(n<sup>2</sup>). The trend continues for
+            polynomials. If for example, two different arrays were searched through
+            one after the other, the complexity would be O(a + b), where step 1
+            takes O(a) and the second takes O(b). Constants are 'dropped',
+            meaning if the same array is searched through twice,
+            it is still O(n) rather than O(2N). This is down to the way
+            big O works as a fundamental heuristic approach.
+          </p>
+
             <table align="center">
               <tr>
                 <h3>Time complexity for common algorithms</h3>
